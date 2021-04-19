@@ -1,0 +1,21 @@
+body {
+    background-color: #e4e6e4;
+    font-family: Comfortaa;
+    
+}
+.art-page {
+    color: gray;
+}
+.art-line {
+    padding-left: 100px;
+    padding-bottom: 20px;
+}
+.footer-text {
+    font-size: 12px;
+    color: grey;
+    padding-left: 15px;
+}
+p {
+    font-size: 12px;
+    color: #017b64;
+}
