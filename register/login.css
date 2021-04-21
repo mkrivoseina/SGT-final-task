@@ -8,6 +8,7 @@ body {
 }
 .art-line {
     padding-left: 100px;
+    padding-top: 100px;
 }
 .card {
     margin-left: 100px;
@@ -46,3 +47,6 @@ input[type=checkbox] {
     
     transform: scale(1.5);
 }
+.active {
+    background-color: #017b655b !important;
+  }

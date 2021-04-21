@@ -6,73 +6,191 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SC home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="../chat/chat.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="./aboutus.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="" style="color: #017b64; font-family:'Comfortaa'; margin-left: 15px;"> <strong>
-                SECOND </strong>
-            chance
-        </a>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon">
+            </span>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="../main/main.html" style="color: black;">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../articles/articles.html" style="color: black;">Articles</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./chat.html" style="color: black;">Chat</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../register/login.html" style="color: black;">Register</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="./aboutus.html">About us</a>
-                </li>
-            </ul>
+        </button>
+        <div class="collapse navbar-collapse" id="#collapse_target">
+            <a href="" class="navbar-brand"><img src="../images/logo.png"
+                    style="width: 56px; height: 32px; padding-left: 10px;"></a>
+            <span class="navbar-text" style="color: #017b64; font-size: 20px;"> <strong>SECOND</strong> chance
+            </span>
+            <div class="collapse navbar-collapse justify-content-end">
+
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../main/main.html" style="color: black;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../articles/articles.html" style="color: black;">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../chat/chat.html" style="color: black;">Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../register/login.html" style="color: black;">Register</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./aboutus.html">About us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-
     <hr style="margin-top: 0;">
     <div class="art-line">
         <span>Home</span> <span>></span> <span class="art-page">About Us</span>
     </div>
 
     <h1>About us</h1>
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
+    <div class="container border">
+
+        <ul class="nav nav-pills mb-3 bg-light border-bottom" id="pills-tab" role="tablist">
+            <li class="nav-item border" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Our mission</button>
+            </li>
+            <li class="nav-item border" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Our story</button>
+            </li>
+            <li class="nav-item border" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">How you can support
+                    us</button>
+            </li>
+        </ul>
+
+        <div class="tab-content pb-3" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="card mb-3" style="max-width: 100%;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../images/article-6.png" style="width: 350px; height: 350px;" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis nobis excepturi exercitationem hic sunt suscipit repellat, adipisci
+                                    fuga consequuntur quod minima mollitia corrupti ipsam maiores inventore ea animi
+                                    temporibus delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Facilis neque, exercitationem a alias officia blanditiis repudiandae praesentium
+                                    eveniet ea repellat. Doloribus odit repellendus sed dolores repellat! Placeat
+                                    molestias numquam debitis?. Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Consequuntur similique quo distinctio ipsam mollitia ullam at quam, quia id
+                                    aperiam, exercitationem, perferendis ab minima rem corrupti. Explicabo pariatur
+                                    ullam veritatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse aut
+                                    voluptatibus, suscipit autem ut a sunt sint ullam voluptate sit, explicabo nobis,
+                                    praesentium nesciunt dignissimos perferendis accusamus magnam? Unde, facere? lorem
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="card mb-3" style="max-width: 100%;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../images/our-story.jpeg" style="width: 350px; height: 350px;" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis nobis excepturi exercitationem hic sunt suscipit repellat, adipisci
+                                    fuga consequuntur quod minima mollitia corrupti ipsam maiores inventore ea animi
+                                    temporibus delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Facilis neque, exercitationem a alias officia blanditiis repudiandae praesentium
+                                    eveniet ea repellat. Doloribus odit repellendus sed dolores repellat! Placeat
+                                    molestias numquam debitis?. Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Consequuntur similique quo distinctio ipsam mollitia ullam at quam, quia id
+                                    aperiam, exercitationem, perferendis ab minima rem corrupti. Explicabo pariatur
+                                    ullam veritatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse aut
+                                    voluptatibus, suscipit autem ut a sunt sint ullam voluptate sit, explicabo nobis,
+                                    praesentium nesciunt dignissimos perferendis accusamus magnam? Unde, facere? lorem
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="card mb-3" style="max-width: 100%;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../images/support.jpg" style="width: 350px; height: 350px;" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis nobis excepturi exercitationem hic sunt suscipit repellat, adipisci
+                                    fuga consequuntur quod minima mollitia corrupti ipsam maiores inventore ea animi
+                                    temporibus delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Facilis neque, exercitationem a alias officia blanditiis repudiandae praesentium
+                                    eveniet ea repellat. Doloribus odit repellendus sed dolores repellat! Placeat
+                                    molestias numquam debitis?. Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Consequuntur similique quo distinctio ipsam mollitia ullam at quam, quia id
+                                    aperiam, exercitationem, perferendis ab minima rem corrupti. Explicabo pariatur
+                                    ullam veritatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse aut
+                                    voluptatibus, suscipit autem ut a sunt sint ullam voluptate sit, explicabo nobis,
+                                    praesentium nesciunt dignissimos perferendis accusamus magnam? Unde, facere? lorem
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <h3>Contacts</h3>
+
+    <div class="container-2 map">
+        <div class="row">
+            <div class="col-md-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17405.102104507125!2d24.114047511077057!3d56.955007213350136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eece354886194d%3A0xd64f65e5f0c0062a!2sArtil%C4%93rijas%20iela%2010%2C%20Centra%20rajons%2C%20R%C4%ABga%2C%20LV-1001!5e0!3m2!1slv!2slv!4v1619017798737!5m2!1slv!2slv"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-6 our-info">
+                <h4>Address:</h4>
+                <p>Artilērijas street 10</p>
+                <h4>Email:</h4>
+                <p>info@secondlife.com</p>
+                <h4>Phone:</h4>
+                <p>+371 43878293</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
     <footer class="footer">
         <p class="footer-text">© 2021 SECOND CHANCE All rights reserved</p>
     </footer>
     </div>
-    <script src="./chat.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf "
+        crossorigin="anonymous "></script>
 
 
 </body>

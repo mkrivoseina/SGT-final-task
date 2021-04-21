@@ -9,6 +9,7 @@ body {
 .art-line {
     padding-left: 100px;
     padding-bottom: 20px;
+    margin-top: 100px;
 }
 .footer-text {
     font-size: 12px;
@@ -19,3 +20,6 @@ p {
     font-size: 12px;
     color: #017b64;
 }
+.active {
+    background-color: #017b655b !important;
+  }

@@ -9,30 +9,22 @@ body {
     
 }
 
-.date {
-    font-size: 10px;
-    color: gray;
-}
-.name {
- color: rgb(119, 91, 65);
-}
+
 .container {
-    width: 900px;
-    height: 500px;
+    width: fit-content;
+    height: fit-content;
     background-color: honeydew;
     padding-top: 10px;
     padding-left: 10px;
     border: solid 3px rgb(148, 209, 186);
     border-radius: 5px;
 }
+.active {
+    background-color: #017b655b !important;
+  }
+ 
 
-.client-input {
-    padding-left: 175px;
-}
 
-.send-button {
-    margin-left: 0;
-}
 p {
     font-size: 14px;
     color: black;
@@ -45,6 +37,10 @@ p {
 }
  h3 {
      color: #017b64;
+     padding-left: 120px;
+ }
+ h4 {
+    color: #017b64;
  }
 
  h1 {
@@ -57,11 +53,12 @@ p {
 .art-line {
     padding-left: 100px;
     padding-bottom: 20px;
-    padding-top: 100px;
+    margin-top: 100px;
 }
-.tabs-container {
-    padding-left: 50px;
+
+.map {
+    padding-left: 100px;
 }
-.active {
-    background-color: #017b655b !important;
-  }
+.our-info {
+    padding-left: 100px;
+}
